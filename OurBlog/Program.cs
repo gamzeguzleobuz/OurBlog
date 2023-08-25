@@ -37,6 +37,11 @@ app.UseRouting();
 app.UseAuthorization();
 
 app.MapControllerRoute(
+     name: "areas",
+    pattern: "{area:exists}/{controller=Dashboard}/{action=Index}/{id?}"
+          );
+
+app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}");
 app.MapRazorPages();
@@ -51,3 +56,8 @@ using (var scope = app.Services.CreateScope())
 }
 
 app.Run();
+
+
+//https://www.pexels.com/photo/white-brown-and-purple-petaled-flowers-931162/
+//https://startbootstrap.com/theme/clean-blog
+//https://getbootstrap.com/docs/5.3/examples/blog/

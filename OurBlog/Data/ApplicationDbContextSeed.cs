@@ -56,3 +56,8 @@ namespace OurBlog.Data
         }
     }
 }
+
+
+
+//var userEmail = "u@example.com";
+//var userPass = "Ankara1.";
